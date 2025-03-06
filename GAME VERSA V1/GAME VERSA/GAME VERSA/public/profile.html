@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img class="imlogo" src="images/Logo1.png" alt="" /></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="liprary.html">Library</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="profile.html">Profile</a></li>
+
+        </ul>
+        <div class="auth-buttons">
+            <a href="signup.html" class="signup-btn">Sign Up</a>
+            <a href="login.html" class="login-btn">Login</a>
+        </div>
+        <div class="theme-toggle">
+            <button id="themeToggle">Dark Mode</button>
+        </div>
+        <button class="menu-toggle">☰</button>
+    </nav>
+
+    <div class="profile-container">
+        <div class="profile-header">
+            <div class="profile-cover"></div>
+            <div class="profile-info">
+                <div class="profile-avatar">
+
+                    <button class="avatar-upload-btn" onclick="document.getElementById('avatar-upload').click()">
+                        <i class="fas fa-camera"></i>
+                        Change Picture
+                    </button>
+                    <img src="default-avatar.jpg" alt="Profile Picture" id="avatar-preview">
+                    <input type="file" id="avatar-upload" accept="image/*" style="display: none;">
+
+
+                </div>
+                <div class="profile-details">
+                    <h1 class="profile-username">Username</h1>
+                    <p class="profile-status">Online</p>
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <span class="stat-value">42</span>
+                            <span class="stat-label">Games</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">156</span>
+                            <span class="stat-label">Friends</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">230</span>
+                            <span class="stat-label">Hours Played</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-content">
+            <div class="profile-section">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <p class="profile-bio">Write something about yourself...</p>
+                    <div class="profile-badges">
+                        <span class="badge">Level 10</span>
+                        <span class="badge">Achievement Hunter</span>
+                        <span class="badge">Beta Tester</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-section">
+                <h2>Recent Activity</h2>
+                <div class="activity-feed">
+                    <div class="activity-item">
+                        <img src="images/counter stirke.jpeg" alt="Game">
+                        <div class="activity-details">
+                            <p>Played Counter-Strike 2</p>
+                            <span>2 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <img src="images/portal 2.jpeg" alt="Game">
+                        <div class="activity-details">
+                            <p>Unlocked achievement in Portal 2</p>
+                            <span>Yesterday</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-section">
+                <h2>Favorite Games</h2>
+                <div class="favorite-games">
+                    <div class="game-mini-card">
+                        <img src="images/counter stirke.jpeg" alt="Game">
+                        <span>120 hrs</span>
+                    </div>
+                    <div class="game-mini-card">
+                        <img src="images/2.jpg" alt="Game">
+                        <span>85 hrs</span>
+                    </div>
+                    <div class="game-mini-card">
+                        <img src="images/6.jpg" alt="Game">
+                        <span>63 hrs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
